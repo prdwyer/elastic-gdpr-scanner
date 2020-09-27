@@ -1,3 +1,13 @@
+social media accounts
+
+https://github.com/lorey/social-media-profiles-regexs
+
+api keys
+
+https://github.com/m4ll0k/SecretFinder
+
+
+
 # elastic-gdpr-scanner
 
 Scan Elasticsearch instances to check for GDPR compliance.
