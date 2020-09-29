@@ -77,8 +77,6 @@ REGEXES = [
 '-----BEGIN EC PRIVATE KEY-----',#    'ssh_dc_private_key' : r
 '-----BEGIN PGP PRIVATE KEY BLOCK-----',#    'pgp_private_block' : r
 'ey[A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*$',#    'json_web_token' : r
-'my_regex', #    'name_for_my_regex' : r
-'^example\w+{10,50}'#    'example_api_key'    : r
 '^[\w\.=-]+@[\w\.-]+\.[\w]{2,3}$',  #TEmail addresses       .Simpson@netwrix.com
 '\b(?!000|666|9\d{2})([0-8]\d{2}|7([0-6]\d))([-]?|\s{1})(?!00)\d\d\2(?!0000)\d{4}\b', #U.S. Social Security numbers 513-84-7329
 '^(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}$', #5MasterCard numbers 258704108753590
@@ -114,7 +112,6 @@ REGEXES = [
 '(?:https?:)?\\/\\/(?:[\\w]+\\.)?linkedin\\.com\\/in\\/(?P<permalink>[\\w\\-\\_\u00c0-\u00ff%]+)\\/?',
 '(?:https?:)?\\/\\/(?:[\\w]+\\.)?linkedin\\.com\\/pub\\/(?P<permalink_pub>[A-z0-9_-]+)(?:\\/[A-z0-9]+){3}\\/?',
 '(?:https?:)?\\/\\/medium\\.com\\/(?:(?:@(?P<username>[A-z0-9]+))|(?P<publication>[a-z-]+))\\/(?P<slug>[a-z0-9\\-]+)-(?P<post_id>[A-z0-9]+)(?:\\?.*)?',
-Can't match these with the regular post regex as redefinitions of subgroups are not allowed in pythons regex.',
 '(?:https?:)?\\/\\/(?P<publication>(?!www)[a-z-]+)\\.medium\\.com\\/(?P<slug>[a-z0-9\\-]+)-(?P<post_id>[A-z0-9]+)(?:\\?.*)?',
 '(?:https?:)?\\/\\/medium\\.com\\/@(?P<username>[A-z0-9]+)(?:\\?.*)?',
 '(?:https?:)?\\/\\/medium\\.com\\/u\\/(?P<user_id>[A-z0-9]+)(?:\\?.*)',
